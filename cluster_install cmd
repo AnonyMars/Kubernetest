@@ -1,0 +1,13 @@
+sudo docker run --privileged -d --restart=unless-stopped -p 80:80 -p 443:443 rancher/rancher
+
+
+Dégager tous les containers d'un node : 
+  docker stop $(docker ps -a -q)
+  docker rm $(docker ps -a -q)
+
+LONGHORN : 
+  -Sur tous les nodes
+yum install iscsi-initiator-utils
+
+Lien utile 
+https://gitlab.com/monachus/channel
