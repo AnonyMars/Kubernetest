@@ -1,0 +1,32 @@
+# Default values for mssql-latest.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+replicas: 1
+
+image:
+  repository: seraphus/kuber:ApiGW
+  pullPolicy: IfNotPresent
+  # Overrides the image tag whose default is the chart appVersion.
+  tag: "-:latest"
+
+autoscaling:
+    enabled: false
+
+  serviceAccount:
+    create: false
+
+service:
+  type: LoadBalancer
+  port: 443
+
+#pvc:
+# StorageClass: "longhorn"
+# userdbaccessMode: ReadWriteOnce
+# userdbsize: 2Gi
+# userlogaccessMode: ReadWriteOnce
+# userlogsize: 2Gi
+# tempdbaccessMode: ReadWriteOnce
+# tempsize: 2Gi
+# mssqldataaccessMode: ReadWriteOnce
+# mssqldbsize: 2Gi
