@@ -8,7 +8,7 @@ image:
   repository: seraphus/kuber
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "ApiGW-37"
+  tag: "ApiGW-68"
 
 imagePullSecrets: []
 nameOverride: ""
