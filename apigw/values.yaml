@@ -5,10 +5,10 @@
 replicaCount: 1
 
 image:
-  repository: seraphus/kuber:ApiGW-37
+  repository: seraphus/kuber
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
-  # tag:
+  tag: "ApiGW-37"
 
 imagePullSecrets: []
 nameOverride: ""
