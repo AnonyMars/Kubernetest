@@ -44,7 +44,7 @@ basket:
   RabbitMQAuth:
     login: user 
     password: admin
-  RabbitMQUrl: 10.4.205.21
+  RabbitMQUrl: rabbitmq-0 
     
 
 
