@@ -41,7 +41,9 @@ service:
   port: 443
 basket:
   port: 80
-  RabbitMQAuth: {"login":"user","password":"admin"}
+  RabbitMQAuth:
+    login: user 
+    password: admin
   RabbitMQUrl: 10.4.205.21
     
 
