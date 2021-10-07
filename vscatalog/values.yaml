@@ -43,7 +43,7 @@ catalog:
   port: 80
   RabbitMQAuth: {"login":"user","password":"admin"}
   RabbitMQUrl: 10.4.205.21
-  DatabaseConnectionString: {"Data Source=10.4.205.23,1433;Initial Catalog=victoriasecret;User ID=sa;Password=Admin123"}
+  DatabaseConnectionString: "Data Source=10.4.205.23,1433;Initial Catalog=victoriasecret;User ID=sa;Password=Admin123"
 
 
 
