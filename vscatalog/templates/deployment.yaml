@@ -34,6 +34,8 @@ spec:
               value: {{ .Values.catalog.RabbitMQAuth }}
             - name: RabbitMQUrl
               value: {{ .Values.catalog.RabbitMQUrl }}
+            - name: DatabaseConnectionString
+              value: {{ .Values.catalog.DatabaseConnectionString }}
           securityContext:
             {{- toYaml .Values.securityContext | nindent 12 }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
