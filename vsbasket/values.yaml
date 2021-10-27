@@ -8,7 +8,7 @@ image:
   repository: seraphus/kuber
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "Basket-72"
+  tag: "Basket-75"
 
 imagePullSecrets: []
 nameOverride: ""
@@ -43,8 +43,12 @@ basket:
   port: 80
   RabbitMQAuth:
     login: user 
-    password: admin
-  RabbitMQUrl: rabbitmq-0 
+    password: lXSGKyV9Kf
+  RabbitMQUrl: 10.4.111.23
+  mongoDb_password: 2TJyJQ7uJD
+  mongoDb_port: 27017
+  mongoDb_login: root
+  mongoDb_Ip: 10.4.111.34
     
 
 
