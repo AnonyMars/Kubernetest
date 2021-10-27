@@ -34,6 +34,14 @@ spec:
               value: {{ .Values.basket.RabbitMQAuth | toJson }}
             - name: RabbitMQUrl
               value: {{ .Values.basket.RabbitMQUrl }}
+            - name: mongoDb_password
+              value: {{ .Values.basket.mongoDb_password }}
+            - name: mongoDb_port
+              value: {{ .Values.basket.mongoDb_port }}
+            - name: mongoDb_login
+              value: {{ .Values.basket.mongoDb_login }}
+            - name: mongoDb_ip
+              value: {{ .Values.basket.mongoDb_ip }}
           securityContext:
             {{- toYaml .Values.securityContext | nindent 12 }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
