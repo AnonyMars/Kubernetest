@@ -48,7 +48,7 @@ basket:
   mongoDb_password: 2TJyJQ7uJD
   mongoDb_port: 27017
   mongoDb_login: root
-  mongoDb_Ip: 10.4.111.34
+  mongoDb_ip: 10.4.111.34
     
 
 
