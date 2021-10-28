@@ -41,10 +41,6 @@ service:
   port: 443
 catalog:
   port: 80
-  RabbitMQAuth:
-    login: user
-    password: lXSGKyV9Kf
-  RabbitMQUrl: 10.4.111.23
   DatabaseConnectionString: Data Source=10.4.111.24;Initial Catalog=victoriasecret;User ID=sa;Password=Admin123
 
 
