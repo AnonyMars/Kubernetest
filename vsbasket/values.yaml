@@ -41,10 +41,6 @@ service:
   port: 443
 basket:
   port: 80
-  RabbitMQAuth:
-    login: user 
-    password: lXSGKyV9Kf
-  RabbitMQUrl: 10.4.111.23
   mongoDb_password: 2TJyJQ7uJD
   mongoDb_port: 27017
   mongoDb_login: root
