@@ -30,10 +30,6 @@ spec:
       containers:
         - name: {{ .Chart.Name }}
           env:
-            - name: RabbitMQAuth
-              value: {{ .Values.catalog.RabbitMQAuth | toJson | quote }}
-            - name: RabbitMQUrl
-              value: {{ .Values.catalog.RabbitMQUrl }}
             - name: DatabaseConnectionString
               value: {{ .Values.catalog.DatabaseConnectionString }}
           securityContext:
