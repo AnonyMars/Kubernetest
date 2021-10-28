@@ -42,7 +42,7 @@ service:
 basket:
   port: 80
   mongoDb_password: 2TJyJQ7uJD
-  mongoDb_port: 27017
+  mongoDb_port: "27017"
   mongoDb_login: root
   mongoDb_ip: 10.4.111.34
     
