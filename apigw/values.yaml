@@ -42,7 +42,7 @@ service:
 gateway:
   port: 80
   aspEnvironment: prod
-  AUTHORITY: https://10.4.111.22/auth/realms/victoryasecret
+  AUTHORITY: https://10.4.111.22/auth/realms/victoriasecret
   AUDIENCE: account
   
   # We usually recommend not to specify default resources and to leave this as a conscious
