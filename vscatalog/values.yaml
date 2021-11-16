@@ -42,7 +42,7 @@ service:
 catalog:
   port: 80
   DatabaseConnectionString: Data Source=10.4.111.24;Initial Catalog=vs-g5;User ID=sa;Password=Admin123
-
+  elk: http://10.4.111.24:9200
 
 
 resources: {}
