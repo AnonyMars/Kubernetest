@@ -32,6 +32,18 @@ spec:
           env:
             - name: ASPNETCORE_ENVIRONMENT
               value: {{ .Values.gateway.aspEnvironment }}
+            - name: AUTHORITY
+              value: {{ .Values.gateway.AUTHORITY }}
+            - name: AUDIENCE
+              value: {{ .Values.gateway.AUDIENCE }}
+            - name: HOSTBASKET
+              value: {{ .Values.gateway.HOSTBASKET }}
+            - name: HOSTBASKETPORT
+              value: {{ .Values.gateway.HOSTBASKETPORT }}
+            - name:  HOSTCATALOG
+              value: {{ .Values.gateway.HOSTCATALOG }}
+            - name:  HOSTCATALOGPORT
+              value: {{ .Values.gateway.HOSTCATALOGPORT }}
           securityContext:
             {{- toYaml .Values.securityContext | nindent 12 }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
