@@ -41,7 +41,7 @@ service:
   port: 443
 gateway:
   port: 80
-  aspEnvironment: "dev"
+  aspEnvironment: "prod"
   AUTHORITY: "https://10.4.111.22/auth/realms/victoryasecret"
   AUDIENCE: "account"
   HOSTBASKET: 10.4.111.25
