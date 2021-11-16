@@ -41,7 +41,7 @@ service:
   port: 80
 catalog:
   port: 80
-  DatabaseConnectionString: "Data Source=10.4.111.24;Initial Catalog=victoriasecret;User ID=sa;Password=Admin123"
+  DatabaseConnectionString: Data Source=10.4.111.24;Initial Catalog=victoriasecret;User ID=sa;Password=Admin123
 
 
 
