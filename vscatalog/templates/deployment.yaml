@@ -32,6 +32,8 @@ spec:
           env:
             - name: DatabaseConnectionString
               value: {{ .Values.catalog.DatabaseConnectionString }}
+            - name: elk
+              value: {{ .Values.catalog.elk }}
           securityContext:
             {{- toYaml .Values.securityContext | nindent 12 }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
