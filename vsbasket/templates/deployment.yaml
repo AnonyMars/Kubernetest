@@ -38,6 +38,8 @@ spec:
               value: {{ .Values.basket.mongoDb_login }}
             - name: mongoDb_ip
               value: {{ .Values.basket.mongoDb_ip }}
+            - name: mssql
+              value: {{ .Values.basket.mssql }}
           securityContext:
             {{- toYaml .Values.securityContext | nindent 12 }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
