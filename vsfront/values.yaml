@@ -8,7 +8,7 @@ image:
   repository: seraphus/kuber
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "latest"
+  tag: "Front-95"
 
 imagePullSecrets: []
 nameOverride: ""
@@ -38,9 +38,9 @@ securityContext: {}
 
 service:
   type: LoadBalancer
-  port: 443
-front:
   port: 80
+front:
+  port: 3000
   
 
 
