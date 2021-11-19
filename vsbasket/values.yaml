@@ -45,7 +45,7 @@ basket:
   mongoDb_port: "27017"
   mongoDb_login: root
   mongoDb_ip: 10.4.111.34
-  ConnectionString: Persist Security Info=False;User ID=sa;Password=Admin123;Initial Catalog=vs-g2;Server=10.4.111.23,1433
+  connectionstring: Persist Security Info=False;User ID=sa;Password=Admin123;Initial Catalog=vs-g2;Server=10.4.111.23,1433
 
 
 resources: {}
