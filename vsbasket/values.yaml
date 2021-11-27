@@ -8,7 +8,7 @@ image:
   repository: seraphus/kuber
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "Basket-90"
+  tag: "Basket-121"
 
 imagePullSecrets: []
 nameOverride: ""
@@ -41,11 +41,11 @@ service:
   port: 443
 basket:
   port: 80
-  mongoDb_password: 2TJyJQ7uJD
+  mongoDb_password: grxHdQrHUU
   mongoDb_port: "27017"
   mongoDb_login: root
-  mongoDb_ip: 10.4.111.34
-  connectionstring: Persist Security Info=False;User ID=sa;Password=Admin123;Initial Catalog=vs-g2;Server=10.4.111.23,1433
+  mongoDb_ip: 10.4.111.22
+  connectionstring: Persist Security Info=False;User ID=sa;Password=Admin123;Initial Catalog=vs-g5;Server=10.4.111.21,1433
 
 
 resources: {}
