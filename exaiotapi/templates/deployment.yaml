@@ -29,6 +29,16 @@ spec:
         {{- toYaml .Values.podSecurityContext | nindent 8 }}
       containers:
         - name: {{ .Chart.Name }}
+          env:
+            - name: AzureKeyVaultEndpoint
+              value: {{ .Values.api.AzureKeyVaultEndpoint }}
+            - name: AzureKeyVaultClientId
+              value: {{ .Values.api.AzureKeyVaultClientId }}
+            - name: AzureKeyVaultClientSecret
+              value: {{ .Values.api.AzureKeyVaultClientSecret }}
+            - name: AzureKeyVaultTenantId
+              value: {{ .Values.api.AzureKeyVaultTenantId }}
+
           securityContext:
             {{- toYaml .Values.securityContext | nindent 12 }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
