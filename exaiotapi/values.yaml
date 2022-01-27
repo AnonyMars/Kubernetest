@@ -40,6 +40,7 @@ service:
   type: LoadBalancer
   port: 80
 api:
+  port: 80
   AzureKeyVaultEndpoint: https://exa-iot-vault.vault.azure.net/
   AzureKeyVaultClientId: 2680d8e1-51f4-48b8-b6e5-3f54974f952b
   AzureKeyVaultClientSecret: -gJ7Q~fVZud3KJfZieNDMZuig0ZFC6cxMp8ku
