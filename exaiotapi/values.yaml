@@ -46,7 +46,7 @@ api:
   AzureKeyVaultClientSecret: -gJ7Q~fVZud3KJfZieNDMZuig0ZFC6cxMp8ku
   AzureKeyVaultTenantId: 14bc5219-40ca-4d62-a8e4-7c97c1236349
 
-initialDelaySeconds: 300
+initialDelaySeconds: 60
   
   
 ingress:
